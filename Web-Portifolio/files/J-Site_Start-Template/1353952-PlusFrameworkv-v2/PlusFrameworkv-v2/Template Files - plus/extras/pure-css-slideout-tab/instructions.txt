@@ -1,0 +1,22 @@
+::::::::: Instructions for Pure CSS Slide-out ::::::::::
+
+STEP 1:
+Copy the HTML into your template, right after the <body> tag
+
+STEP 2:
+Copy the CSS into your stylesheet
+
+STEP 3:
+Edit the image file contact-tab.png appropriately to fit your needs
+
+EXPLANATION OF THE LINKS:
+Explanation of the links in each <a href="">
+Do not change these unless you understand what they do
+
+	1. "#slide-out" links to the matching div id, the portion that needs to "slide out"
+
+	2. "#_" links to the original page without changing position or reloading, allowing the slide-out to simply close when clicked again.
+
+
+Full explanation: https://developer.mozilla.org/en-US/docs/Web/CSS/:target
+

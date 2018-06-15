@@ -1,0 +1,16 @@
+<!----------------------------------------------------------------->
+<!-- Add the following to the head section of your template HTML -->
+<!----------------------------------------------------------------->
+
+<!-- remove empty div script -->
+<script>
+$(document).ready(function(){
+                $('.slogan').each(function() {
+          if ($(this).html()=="") {
+             $('.slogan').hide();
+                 }
+                });
+        });
+</script>
+<!-- end remove empty div script -->
+

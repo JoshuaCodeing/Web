@@ -1,0 +1,40 @@
+Below is the CSS and Javascript for a sticky nav (area). In the below script, change or use the ID in red as the DIV you want to be sticky. 
+The green ID is the DIV that appears below it. 
+
+/* CSS */
+
+.sticky {
+  left: 0;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 700;
+}
+
+
+<script>
+$(document).ready(function() {
+var stickyNavTop = $('#wrapper-header').offset().top;
+
+var stickyNav = function(){
+var scrollTop = $(window).scrollTop(); 
+var wrapHeight = $('#wrapper-header').outerHeight();
+
+if (scrollTop > stickyNavTop) { 
+    $('#wrapper-header').addClass('sticky');
+    $('#wrapper-content').css('margin-top',wrapHeight);
+        
+} else {
+    $('#wrapper-header').removeClass('sticky'); 
+     $('#wrapper-content').css('margin-top',0);
+        
+}
+};
+
+stickyNav();
+
+$(window).scroll(function() {
+    stickyNav();
+});
+});
+</script>

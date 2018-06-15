@@ -1,0 +1,327 @@
+h2 {
+	padding: 0; 
+	margin: 0;
+}
+
+
+/* blockquote style 1 - with both open and close quotation marks */
+blockquote.style1  { 
+	margin: 15px; 
+	padding: 20px;
+}
+
+blockquote.style1:before, q:before {
+  content: '\201C';
+  display: inline;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 0;
+  margin: 15px 5px 0 0; 
+  float: left;
+  color: #ff9d02;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+blockquote.style1:after, q:after {
+  bottom: -30px;
+  content: '\201D';
+  display: inline;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 0;
+  margin: 0 0 25px 5px;
+  position: relative;
+  color: #ff9d02;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+blockquote,
+blockquote div,
+blockquote p {
+	color: #393939;
+	line-height: 140%;
+	font-size: 16px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+
+/* blockquote style 2 - with big open quotation mark */
+blockquote.style2  { 
+	margin: -15px 15px 0; 
+	padding: 20px;
+}
+
+blockquote.style2:before {  
+	content: "\201C";
+	font-size: 200px;
+	font-weight: bold;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #a9c051;
+	position: relative;
+	top: 85px;
+}
+
+blockquote,
+blockquote div,
+blockquote p {
+	color: #393939;
+	line-height: 140%;
+	font-size: 16px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+
+/* blockquote style 3 - with both open and close quotation marks and rounded corner background */
+blockquote.style3  { 
+	background: #4a5b5c;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	margin: 15px; 
+	padding: 20px;
+}
+	
+blockquote.style3:before, q:before {
+  content: '\201C';
+  display: inline;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 0;
+  margin: 15px 5px 0 0; 
+  float: left;
+  color: #ff9d02;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+blockquote.style3:after, q:after {
+  bottom: -30px;
+  content: '\201D';
+  display: inline;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 0;
+  margin: 0 0 25px 5px;
+  position: relative;
+  color: #ff9d02;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+blockquote.style3,
+blockquote.style3 div,
+blockquote.style3 p {
+	color: #ffffff;
+	line-height: 140%;
+	font-size: 16px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+
+/* blockquote style 4 - with background talk bubble */
+blockquote.style4 {
+    background: #ff9c00;
+    border-radius: 10px;
+    margin: 15px; 
+	padding: 15px 20px 20px;
+    position: relative;
+}
+
+blockquote.style4:before, q:before {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent #ff9c00;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 30px 20px 0;
+    bottom: -20px;
+    content: "";
+    display: block;
+    left: 60px;
+    position: absolute;
+    width: 0;
+}
+
+blockquote.style4:after, q:after {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent #fff;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 10px 20px 0;
+    bottom: -20px;
+    content: "";
+    display: block;
+    left: 80px;
+    position: absolute;
+    width: 0;
+}
+
+blockquote.style4,
+blockquote.style4 div,
+blockquote.style4 p {
+	color: #ffffff;
+	line-height: 140%;
+	font-size: 16px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+
+/* blockquote style 5 - with background talk bubble */
+blockquote.style5 {
+    background: #ff9c00;
+    border-radius: 10px;
+    margin: 15px; 
+	padding: 15px 20px 20px;
+    position: relative;
+}
+
+blockquote.style5:before, q:before {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent #ff9c00;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 0 20px 30px;
+    bottom: -20px;
+    content: "";
+    display: block;
+    right: 60px;
+    position: absolute;
+    width: 0;
+}
+
+blockquote.style5:after, q:after {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent #fff;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 0 20px 10px;
+    bottom: -20px;
+    content: "";
+    display: block;
+    right: 80px;
+    position: absolute;
+    width: 0;
+}
+
+blockquote.style5,
+blockquote.style5 div,
+blockquote.style5 p {
+	color: #ffffff;
+	line-height: 140%;
+	font-size: 16px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+
+/* blockquote style 6 - with background talk bubble */
+blockquote.style6 {
+    background: none repeat scroll 0 0 #c91f2c;
+    margin: 15px 15px 30px; 
+	padding: 15px 20px 20px;
+    position: relative;
+}
+
+blockquote.style6:before {
+    border-color: transparent #c91f2c;
+    border-style: solid;
+    border-width: 0 0 40px 40px;
+    bottom: -40px;
+    content: "";
+    position: absolute;
+    right: 0;
+}
+
+blockquote.style6:after {
+    border-color: transparent #fff;
+    border-style: solid;
+    border-width: 0 0 40px 10px;
+    bottom: -40px;
+    content: "";
+    position: absolute;
+    right: 30px;
+}
+
+blockquote.style6,
+blockquote.style6 div,
+blockquote.style6 p {
+	color: #ffffff;
+	line-height: 140%;
+	font-size: 16px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+
+/* blockquote style 7 - with left and right borders and open quotation mark */
+blockquote.style7  {
+	margin: 15px; 
+	padding: 15px 15px 15px 25px;
+	background: url(gfx/bg-blockquote-style7.png) top left no-repeat;
+	border-right: 4px solid #0066b7;
+}
+
+blockquote,
+blockquote div,
+blockquote p {
+	color: #393939;
+	line-height: 140%;
+	font-size: 16px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+
+/* blockquote style 8 - with left and right borders, open quotation mark and background */
+blockquote.style8  { 
+	margin: 15px; 
+	padding: 15px 15px 15px 25px;
+	background: #eee url(gfx/bg-blockquote-style7.png) top left no-repeat;
+	border-right: 4px solid #0066b7;
+}
+
+blockquote,
+blockquote div,
+blockquote p {
+	color: #393939;
+	line-height: 140%;
+	font-size: 16px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+
+/* blockquote style 9 - with left and right borders, open quotation mark and background */
+blockquote.style9  { 
+	margin: 15px; 
+	padding: 20px;
+	border: 1px dotted #999;
+}
+
+blockquote.style9:before, q:before {
+  content: '\201C';
+  color: #5e911f;
+  float: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 0;
+  margin: 10px 5px 0 0; 
+}
+
+blockquote,
+blockquote div,
+blockquote p {
+	color: #393939;
+	line-height: 140%;
+	font-size: 16px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+

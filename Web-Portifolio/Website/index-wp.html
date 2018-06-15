@@ -1,0 +1,419 @@
+<!-- web protofoilio -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Joshua Joseph | Web Protfolio</title>
+    
+     <!--------BOOTSTRAP---------------------------->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <!--------BOOTSTRAP---------------------------->
+     
+     <!--------FONT AWESOME---------------------------->
+     <script src="https://use.fontawesome.com/058c65c980.js"></script>
+     <!--------FONT AWESOME---------------------------->
+     
+     
+      <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'> 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+      
+     <!--------CUSTOM CSS----------------------------> 
+      <link rel="stylesheet" href="css.css">
+      <link rel="stylesheet" href="animate.css">
+      <!--------CUSTOM CSS----------------------------> 
+      
+      
+  </head>
+<script>
+$(document).ready(function() {
+var stickyNavTop = $('#wrapper-footer-meun').offset().top;
+
+var stickyNav = function(){
+var scrollTop = $(window).scrollTop(); 
+var wrapHeight = $('#wrapper-footer-meun').outerHeight();
+
+if (scrollTop > stickyNavTop) { 
+    $('#wrapper-footer-meun').addClass('sticky');
+    $('#wrapper-content').css('margin-top',wrapHeight);
+        
+} else {
+    $('#wrapper-menu').removeClass('sticky'); 
+     $('#wrapper-content').css('margin-top',0);
+        
+}
+};
+
+stickyNav();
+
+$(window).scroll(function() {
+    stickyNav();
+});
+});
+</script>
+<script>
+    $(window).load(function(){
+  $(window).scroll(function() {
+    var wintop = $(window).scrollTop(), docheight = $('#body').height(), winheight = $(window).height();
+    console.log(wintop);
+    var totalScroll = (wintop/(docheight-winheight))*100;
+    console.log("total scroll" + totalScroll);
+    $(".progesstionr").css("width",totalScroll+"%");
+  });
+
+});
+    
+</script>
+    <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+    <script type="text/javascript">
+            $(function(){
+                
+                
+                var docEl = $(document), fadeEl = $('.fade-away');
+                docEl.on('scroll',function(){
+                    
+                    var currentPos = docEl.scrollTop();
+                    
+                        fadeEl.each(function(){
+                            
+                            var $this = $(this), elemOff = $this.offset().top;
+                            if(currentPos > elemOff)$this.css('opacity', 1 -(currentPos-elemOff)/400)
+                        });
+                });
+            });
+    
+    
+    </script>
+  <body>
+    <div class="wrapper" id="body">
+<!--Header-->
+      <div class="header-wrapper">
+            <div class="header">
+                <div id="open">
+					<span class="cls"></span>
+                    <span>
+                        <span class="logo"><a class="navbar-brand" href="#">Joshua</a></span>
+                        <ul class="sub-menu ">
+                           <li><a href="#about">About Me</a></li>
+                            <li><a href="#area">Area of Work</a></li>
+                            <li><a href="#resume-id">Resume</a></li>
+                            <li><a href="#mock">Portfolio</a></li>
+                            <li><a href="#contact">Contact Me</a></li>
+                            <li><a href="https://www.joshua-portfolio.net/" target="_blank">WordPress</a></li>
+                        </ul>
+                       
+                    </span>
+					<span class="cls"></span>
+                </div>
+                <div class="progess-contain">
+                    <div class="progesstion"></div>
+                
+                </div>
+                  <div id="hero">
+                    <!--<img src="Images/header.jpg" alt="computer">-->
+                    <div class="Header-Text animated fadeIn">
+                       <h3> Hi, I am </h3>
+                        <h1>Joshua Joseph</h1>
+                        <hr />
+                        <p>Web Developer - Web Designer</p>
+                   	    <hr />
+                        <div class="button-wrapper">
+                            <button class="widget-button"><a href="mailto:shua22@hotmail.com">Hire me </a></button>
+                        </div>
+                        <div class="social-wrapper">
+                        	<span class="social"><a href="https://www.instagram.com/joshua_michael_joseph/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></span>
+                        	
+                        	<span class="social"><a href="https://www.linkedin.com/in/joshua-joseph-687a8b122/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></span>
+                         </div>
+                    </div>
+                </div>         
+           </div>
+      </div>
+<!--Header end-->
+    <div class="secton-1">
+        <div class="content">
+            <section >
+                              <div class="container">
+                             
+ 					 <div class="row">
+  						  <div class="col-sm-6">
+   							  <img src="Images/head-shot.png" class="img-responsive img-circle">
+    						</div>
+    					<div class="col-sm-6">
+    						     <h1 id="about">Hello</h1>
+                    		<div class="sub-line">I'm a Designer</div>
+                    		<div class="infomation">
+                 				<p>At sixteen I already had the passion for IT, with the limited resources that I had access to (I grew up in a small island called Dominica), I was able to save money up to attend a A+ Course class, which as a result, landed me my first job as a IT repair man.</p>
+                 				<p>I then moved to the United States to live you with my mother.I enrolled in college shortly after arriving to America through a compass test at DekalbTech(known as "piedmont technical college"), After 2 years at DekalbTech, I transferred to Georgia Southern University where I began my dive into web development and designer, getting a job at Yellow Pages after graduation. </p>
+                 			</div>
+   						 </div>
+  					</div>
+					 </div>
+       
+           
+                 
+            </section>     
+        </div>
+    </div>
+         <section class="secton-2" id="area">
+                <div class="container">
+                	<div class="row">
+                			<div class="col-sm-3">
+                				<div class="thumb-icon">
+            						<i class="fa fa-laptop" aria-hidden="true"></i>	
+                				</div>
+                				<div class="call-Out">
+                						<h4>WEB DESIGNING</h4>
+                						<span>Clean and Modern Designs</span>
+                				</div>
+                			</div>
+                			<div class="col-sm-3">
+                			<div class="thumb-icon">
+            						<i class="fa fa-recycle" aria-hidden="true"></i>
+                				</div>
+                				<div class="call-Out">
+                						<h4>Web Development</h4>
+                						<span>Using the best to bring to life my<br/> designs</span>
+                				</div>
+                			</div>
+                			<div class="col-sm-3">
+                			<div class="thumb-icon">
+            						<i class="fa fa-paint-brush" aria-hidden="true"></i>
+                				</div>
+                				<div class="call-Out">
+                						<h4>Movies</h4>
+                						<span>Creating short films is one of my passions </span>
+                				</div>
+                			</div>
+                			<div class="col-sm-3">
+                			<div class="thumb-icon">
+            						<i class="fa fa-headphones" aria-hidden="true"></i>
+                				</div>
+                				<div class="call-Out">
+                						<h4>Music </h4>
+                						<span>Creating Music make me happy</span>
+                				</div>
+                			</div>
+                			
+                	</div>                	
+                </div>
+            </section>
+        <section class="section-3">
+			<h1 class="padding-resume" id="resume-id">My resume</h1>
+
+        		<div class="container">
+        			<div class="row">
+        				<div class="col-sm-3">
+        					<span class="web-site">yellowpages.com</span><br/>
+        					<span class="company-date">2017 - Current</span>
+        				</div>
+        				<div class="col-sm-3 work-details">
+        					<h2>Premium Web Designer</h2>
+        					<p>Design and develop websites based on clients specifications</p>
+        				</div>
+        			
+        		
+        				<div class="col-sm-3">
+        				<span class="web-site">Georgia Southern University</span><br/>
+        					<span class="company-date">2017-2017</span>
+        				</div>
+        				<div class="col-sm-3 work-details">
+        				<h2>Web Developer</h2>
+        					<p>Created membership website for GSU retirees.</p>
+        				</div>
+        			
+					</div>
+       		<span class="hr"><hr /></span>
+       		<div class="row">
+        				<div class="col-sm-3">
+        					<span class="web-site">shopnowdecor.com</span><br/>
+        					<span class="company-date">2017-2017</span>
+        				</div>
+        				<div class="col-sm-3 work-details">
+        					<h2>Web Developer</h2>
+        					<p>Created a E-commerce website with the goal of attracting decor retailers </p>
+        				</div>
+        			
+        		
+        				<div class="col-sm-3">
+        				<span class="web-site">Georgia Southern University</span><br/>
+        					<span class="company-date">2016-2016</span>
+        				</div>
+        				<div class="col-sm-3 work-details">
+        				<h2>Teachers Aid</h2>
+        					<p>Assisted students with PHP, JQuery, Ajax, JSON and XML problems</p>
+        				</div>
+        			
+					</div>
+        		</div>
+        </section>
+        <section class="section-4">
+        		<h1 id="mock">Portfolio</h1>
+			  <div class="container gallery-container">
+
+				<div class="tz-gallery">
+
+					<div class="row">
+
+						<div class="col-sm-6 col-md-4">
+							<div class="thumbnail">
+								<a class="lightbox" href="Images/Web-site/Biolab.PNG">
+									<img src="Images/Web-site/Biolab.PNG" alt="website">
+								</a>
+								<div class="caption">
+									<h3>http://www.biolabpest.com/</h3>
+									<p>Pest and Termite Extermination in Chattanooga, Tennessee</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="thumbnail">
+								<a class="lightbox" href="Images/Web-site/Blue-Ox.PNG">
+									<img src="Images/Web-site/Blue-Ox.PNG" alt="website">
+								</a>
+								<div class="caption">
+									<h3>http://www.blueoxtreecare.com/</h3>
+									<p>Tree Services in Indianapolis, Indiana</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="thumbnail">
+								<a class="lightbox" href="Images/Web-site/Myers.PNG">
+									<img src="Images/Web-site/Myers.PNG" alt="website">
+								</a>
+								<div class="caption">
+									<h3>http://www.myerslawpc.com/</h3>
+									<p>Your Trusted Traffic and Criminal Attorney in Blacksburg, Virginia</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="thumbnail">
+								<a class="lightbox" href="Images/Web-site/Steel.PNG">
+									<img src="Images/Web-site/Steel.PNG" alt="website">
+								</a>
+								<div class="caption">
+									<h3>http://www.steelshieldroofing.com/</h3>
+									<p>Specialized Roofing Contractors in Pittsburgh, Pennsylvania</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="thumbnail">
+								<a class="lightbox" href="Images/Web-site/Capitaal.PNG">
+									<img src="Images/Web-site/Capitaal.PNG" alt="website">
+								</a>
+								<div class="caption">
+									<h3>http://www.capitalcityapplianceservice.com/</h3>
+									<p>Efficient Home Appliances in Columbus, Ohio</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="thumbnail">
+								<a class="lightbox" href="Images/Web-site/Done.PNG">
+									<img src="Images/Web-site/Done.PNG" alt="website">
+								</a>
+								<div class="caption">
+									<h3>https://www.donedizzy.com/</h3>
+									<p>Art has to move you and design does not, unless it’s a good design for a bus</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+					
+			</div>
+        </section>
+        <section class="footer">
+        <h1 id="contact">Contact me!</h1>
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-sm-4">
+        					<div class="thumb-icon">
+            						<i class="fa fa-phone" aria-hidden="true"></i>	
+                				</div>
+                				<div class="call-Out">
+                						<h4>Call</h4>
+                						<span>404-563-5274</span>
+                				</div>
+        			</div>
+        			<div class="col-sm-4">
+        				<div class="thumb-icon">
+            						<i class="fa fa-envelope" aria-hidden="true"></i>
+                				</div>
+                				<div class="call-Out">
+                						<h4>E-mail</h4>
+                						<span>shua22@hotmail.com</span>
+                				</div>
+        			</div>
+        			<div class="col-sm-4">
+        				<div class="thumb-icon">
+            						<i class="fa fa-map" aria-hidden="true"></i>
+                				</div>
+                				<div class="call-Out">
+                						<h4>Location</h4>
+                						<span>Atlanta, GA</span>
+                				</div
+        			</div>
+        			
+        		</div>
+        		
+        	</div>
+        	
+        </section>
+    </div>
+  </body>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="Script/menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+		<script>
+			baguetteBox.run('.tz-gallery');
+		</script>
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script>
+		
+				$(document).ready(function() {
+		  			$(document).delegate('.open', 'click', function(event){
+						$(this).addClass('oppenned');
+						event.stopPropagation();
+		  })
+		  $(document).delegate('body', 'click', function(event) {
+			$('.open').removeClass('oppenned');
+		  })
+		  $(document).delegate('.cls', 'click', function(event){
+			$('.open').removeClass('oppenned');
+			event.stopPropagation();
+		  });
+		});
+		
+		</script>
+</html>

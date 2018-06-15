@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Responsive Structure</title>
+<link rel="stylesheet" type="text/css" href="color1-wp.css" />
+<link href="main.css" rel="stylesheet" type="text/css" />
+<link href="header-selector.css" rel="stylesheet" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+<!-- BEGIN HTML COPY/PASTE -->
+
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+<!-- script for scroll to top, IE drop down menu fix, and mobile quick nav link script -->
+<script type="text/javascript" src="gfx/yp-scripts.js"></script>
+<!-- mobile navigation script -->
+<script>
+$(document).ready(function(){
+	$("#navTab").click(function(){
+	  $("#m-menu-content").slideToggle("slow");
+	  $(this).toggleClass("active");
+	  	});
+		if ($('ul#nav li ul li').hasClass('current')) {
+		$('ul#nav li ul li.current').parents('li').addClass('current');
+		};
+	});
+</script>
+<!-- end mobile navigation script -->
+
+</head>
+
+<body>
+
+<!-- mobile cta panel -->
+<div id="m-panel">
+  <div class="m-panel-content"> 
+  <a href="tel:{PHONE}" rel="nofollow" class="m-click-phone"><span>{LANG_CALL_US_M}</span></a> 
+  <a href="mailto:{EMAIL}" class="m-click-mail"><span>{LANG_SEND_EMAIL_M}</span></a> 
+  <a href="{CLICK2MAPURL}" class="m-click-map"><span>{CLICK2MAPURL}</span></a> 
+  </div>
+</div>
+<!-- end mobile cta panel --> 
+
+<!-- back to top -->
+<p id="back-top"> <a href="#top"><span></span>Back to Top</a> </p>
+<!-- end back to top --> 
+
+<!-- begin mobile menu -->
+<nav id="m-menu" > 
+  <!-- mobile menu button -->
+  <div id="m-wrapper-menu"> <a id="navTab"></a> </div>
+  <!-- end mobile menu button -->
+  <div id="m-menu-content"> 
+    <!-- replace with menu tag -->
+    <ul id="nav">
+      <li class="current first"><a href="#">Home</a>
+        <ul>
+          <li><a href="#">drop 1</a>
+            <ul>
+              <li><a href="#">drop 2</a></li>
+              <li><a href="#">drop 2</a></li>
+            </ul>
+          </li>
+          <li><a href="#">drop 1</a></li>
+        </ul>
+      </li>
+      <li><a href="#">FIRM OVERVIEW</a></li>
+            <li><a href="#">PRACTICE AREAS</a></li>
+            <li><a href="#">ATTORNEY</a></li>
+			  <li><a href="#">CASES</a></li>
+      <li class="last"><a href="#">Contact Us</a>
+        <ul>
+          <li><a href="#">drop 2</a></li>
+          <li><a href="#">drop 2</a></li>
+        </ul>
+      </li>
+    </ul>
+    <!-- replace with menu tag end --> 
+  </div>
+</nav>
+<!-- end mobile menu --> 
+
+<!-- begin header wrapper -->
+<div id="wrapper-header" class="skinBg"> 
+  
+  <!-- HEADER ONE -->
+  
+  <div id="header-1">
+    <div id="header" class="table-container">
+      <div id="logo-slogan" class="four cells"> 
+        <!-- logo tag --><a class="logo" href="#"> <div><img src="gfx/logo.jpg" alt=""/></div> </a><!-- logo tag -->  
+      </div>
+      <!-- start phone-cta -->
+      <div id="phone-cta" class="twelve cells">
+        <div class="phone-number">1 (800) 555-5555</div>
+        <div class="tagline2">Call Us Today! <br/> </div>    
+      </div>
+      
+      <!-- end logo --> 
+    </div>
+    <!-- end header container --> 
+
+   
+    
+    
+    <!-- start main nav wrapper -->
+    <div id="wrapper-menu">
+      <div class="sk-container"> 
+        <!-- start nav#menu -->
+        <div id="menu" class="sixteen columns">
+          <ul id="nav">
+            <li class="current first"><a href="#">Home</a>
+              <ul>
+                <li><a href="#">drop 1</a>
+                  <ul>
+                    <li><a href="#">drop 2</a></li>
+                    <li><a href="#">drop 2</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">drop 1</a></li>
+              </ul>
+            </li>
+            <li><a href="#">FIRM OVERVIEW</a></li>
+            <li><a href="#">PRACTICE AREAS</a></li>
+            <li><a href="#">ATTORNEY</a></li>
+			  <li><a href="#">CASES</a></li>
+            <li class="last hidde-nav"><a href="#">Contact Us</a>
+              <ul>
+                <li><a href="#">drop 2</a></li>
+                <li><a href="#">drop 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- end nav#menu --> 
+      </div>
+    </div>
+    <!-- end main nav wrapper --> 
+  </div>
+  <!-- END HEADER ONE --> 
+  
+  <!-- begin mobile phone # -->
+  
+    <div id="m-phone-cta" >
+      
+    
+  </div>
+  <!-- end mobile phone # --> 
+  
+</div>
+<!-- end header wrapper --> 
+
+<!-- start div#wrapper-content -->
+<div id="wrapper-content"><!-- the skinBg is one of the images that can be swapped out by the user through the UI --> 
+  
+  <!-- content area -->
+  <section>
+    <div id="content"> 
+      <!-- end remove and replace with CONTENT_DATA tag --> 
+      
+    </div>
+  </section>
+</div>
+<!-- end div#wrapper-content --> 
+
+<!-- start div#wrapper-footer-nav -->
+<div id="wrapper-footer-nav">
+  <div class="sk-container"> 
+    <!-- start mirrior menu module -->
+    <nav class="six columns">
+      <ul id="mirror-menu-module">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Firm Overview</a></li>
+        <li><a href="#">Pratice Areas</a> </li>
+        <li><a href="#">Attorney</a> </li>
+        <li><a href="#">Cases</a> </li>
+        <li><a href="#">Contact Us</a> </li>
+       
+      </ul>
+    </nav>
+    
+    <div id="address-phone" class="ten columns">
+    	 {WIDGET_AREA|{"name":"footer"}|}  
+    </div>
+    <!-- end mirrior menu module --> 
+    
+  </div>
+  <!-- end footer container --> 
+</div>
+<!-- end div#wrapper-footer-nav --> 
+
+<!-- start div#wrapper-copyright -->
+
+<!-- end div#wrapper-copyright --> 
+
+<!-- END HTML COPY/PASTE -->
+
+
+
+
+
+</body>
+</html>

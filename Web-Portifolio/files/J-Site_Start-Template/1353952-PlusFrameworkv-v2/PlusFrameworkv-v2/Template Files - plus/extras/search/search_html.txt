@@ -1,0 +1,16 @@
+STEP 1:
+-----Place the following right below the opening body tag of the template------
+
+<div id="search-box-results">	
+    <div id="search-box-results-inner">
+         <div class="searchResults-close"></div>
+              {SEARCH_RESULTS}
+     </div>
+</div>
+
+STEP 2:
+-----Place the following where you want the search bar to be in the template------
+
+<div id="search-bar">
+{MODULE_SEARCH}
+</div>

@@ -1,0 +1,1232 @@
+
+/* YP Framework for v6 - v1*/
+
+/* ------------------------------------------ */
+/*
+TABLE OF CONTENTS 
+ 1.HEADINGS 
+ 2.TYPOGRAPHY 
+ 3.LINKS 
+ 4.WRAPPERS and CONTAINERS 
+ 5.HEADER AREAS 
+ 6.CONTENT AREAS AND CALLOUTS 
+ 7.FOOTER AREA, UTILITY NAV, AND COPYRIGHT 
+ 8.MAIN NAVIGATION/MENU FOR DESKTOP 
+ 9.MAIN NAVIGATION/MENU FOR MOBILE DIVICES 
+ 10.MOBILE QUICK NAV BUTTONS 
+ 11. WIDGET BUTTONS, BACK TO TOP and SITE MAP 
+ 12. MEDIA QUERIES  
+ */
+/* ------------------------------------------ */
+
+@import url("gfx/wp-skeleton.css"); 
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica,  sans-serif;
+}
+
+	body { 
+		/* Set background image POSITION and REPEAT here! */
+		background: #ffffff;
+	}
+		
+.skinBg { 
+	
+}
+	
+	
+#header-1 {
+	width: 100%;
+	display: inline-block;
+	position:relative;
+	}	
+	
+/* ------------------------------------------ */
+/* 1.HEADINGS */
+/* ------------------------------------------ */
+h1,
+h2,
+h3, 
+h4, 
+h5, 
+h6  {
+	
+	margin-bottom: 5px;
+	line-height: 120%;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+	color:#335a9d;
+}
+
+h1 { 
+	font-size: 260%; 
+}
+h2 { 	
+	font-size: 240%; 
+}
+h3 {	
+	font-size: 220%; 
+}
+h4 { 	
+	font-size: 200%; 
+}
+h5 { 
+	font-size: 180%;  
+}
+h6 { 
+	font-size: 160%;  
+}
+
+/* Jobs Module Heading */
+#jobs-module li .jobs-title a, .jobs-apply a, .jobs-title { /* Add the same font color as your content headings */
+	font-size: 28px; 
+	line-height: 1;
+	}
+
+/* if you have white or light color headings plese add a darker color below for the accordion and tabs widget */
+.ui-widget h1, .ui-helper-reset h1, .diy-f-spot h1 {} 
+.ui-widget h2, .ui-helper-reset h2, .diy-f-spot h2 {} 
+.ui-widget h3, .ui-helper-reset h3, .diy-f-spot h3 {} 
+.ui-widget h4, .ui-helper-reset h4, .diy-f-spot h4 {} 
+.ui-widget h5, .ui-helper-reset h5, .diy-f-spot h5 {} 
+.ui-widget h6, .ui-helper-reset h6, .diy-f-spot h6 {} 
+
+.page-heading {
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+
+/* ------------------------------------------ */
+/* 2.TYPOGRAPHY */
+/* ------------------------------------------ */
+p, ol, ul, dl, address { /* bottom margin only */
+	margin-bottom: 15px; 
+}
+
+#content { /* place font size, family, color and line height here */
+	font-size: 16px; 
+	color: #000;
+	line-height: 190%;
+
+	}
+	
+.ui-widget, .ui-helper-reset { /* this is for the tabs and accordion widgets. use everything from content except font color */
+	font-size: 100%;
+	}
+	
+.diy-f-spot { /* for dark background sites, adjust font color to a darker color for the spotlight widgets */
+
+}	
+
+
+/* style the blockquote to match the site design */
+blockquote  { 
+	margin: 0 0 15px 25px; 
+	padding-left: 24px; 
+	border-left: 3px solid #282828;
+	font-size: 130%;
+	line-height: 150%;
+	font-style: italic; 
+	font-weight: normal;
+}
+
+
+
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {
+	content: '';
+	content: none; 
+}
+
+
+hr { 
+	border: 1px solid #ddd; 
+	clear: both; 
+	margin: 10px 0 10px; 
+	height: 0; 
+}
+
+/* Events and Jobs Module HR */
+.Events_item, #jobs-module ul li.jobs-single-item {
+    border-bottom: 1px solid #CCC;
+}
+
+/* ------------------------------------------ */
+/* 3.LINKS */
+/* ------------------------------------------ */
+a, 
+a:visited {
+	outline: none;
+	color: #0f719f; 
+	text-decoration: underline;
+}
+
+a:hover { 
+	outline: none;
+	color: #000;
+}
+
+a:active, 
+a:focus { 
+	outline: none;
+	color: #000000;
+}
+
+/* if you have white or light color links plese add a darker color below for the accordion and tabs widget */
+.ui-widget a, 
+.ui-widget a:visited,
+.ui-helper-reset a,
+.ui-helper-reset a:visited,
+.diy-f-spot a,
+.diy-f-spot a:visited {
+	color: #fb0000;
+}
+
+.ui-widget a:hover, 
+.ui-helper-reset a:hover,
+.diy-f-spot a:hover, 
+.diy-f-spot a:hover {
+	color: #000000;
+}
+
+.ui-state-default a:hover {
+	color: #555555;
+}
+
+
+/* ------------------------------------------ */
+/* 4.WRAPPERS and CONTAINERS*/	
+/* ------------------------------------------ */
+#wrapper-header, #wrapper-menu, #wrapper-content, #wrapper-footer, #wrapper-footer-nav, #wrapper-copyright { 
+	width: 100%;
+	position: relative;
+}
+
+#wrapper-header {
+	display: block;
+	line-height: 0;
+}
+
+#wrapper-menu {
+	background-color: #253e6d;
+}
+
+#wrapper-content {
+}
+
+#wrapper-footer {
+} 
+
+#wrapper-footer-nav {
+	background: #1d1f1e;
+	padding: 45px 0px;
+}
+
+#wrapper-copyright {
+	display: inline-block;
+	background: #253e6d;
+}
+
+/* ------------------------------------------ */
+/* 5.HEADER AREAS */	
+/* ------------------------------------------ */
+
+/* ---------------HEADER AREA 1--------------- */
+
+#header {}
+
+#logo-slogan {
+	padding: 0px;
+	text-align: left;
+	font-size: 50px;  /* change font size here for logo and slogan */
+	line-height: 1.1;
+}
+
+.logo {} /* add margin or padding here */
+
+a.logo, a.logo div {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 100%;
+	color: #fff;
+}
+
+/* Slogan */
+.slogan {
+	font-size: 40%;
+	line-height: 130%;
+	}
+
+.slogan, .slogan div { 
+}
+
+/* CTA and Phone Number */
+#phone-cta {
+	padding: 15px 0px;
+	text-align: center;
+	font-size: 60px;
+	color: #fff;
+	font-family: 'Roboto Condensed', sans-serif;
+	}
+
+/* hide mobile elements by default */
+#m-phone-cta {
+	display: none;
+	padding: 15px 0px;
+	text-align: center;
+	background-color: #335a9d;
+	font-size: 25px;
+	line-height: 110%;
+	color: #fff;
+}		
+	
+.tagline2 { 	
+	font-size: 30%;  /* add font sizes here */
+	display: block;
+	text-align: right;
+	color: #af1515;
+	font-weight: 400;
+	letter-spacing: 1px;
+    width:100%;
+	clear:left;
+	line-height: 100%;
+	}	
+	
+	  .tagline2 br {
+		  display:none;
+		  }
+	
+.tagline2, .tagline2 div {
+	margin:0 auto;
+}
+
+.phone-number {
+	display: block;
+	font-size: 100%;  /* add font sizes here */
+	font-weight: 700;
+	color: #043146;
+	text-align: right;
+	width:100%;
+	clear:left;
+	line-height: 110%;
+	}
+
+.phone-number, .phone-number a {
+	text-transform: uppercase;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+/* Header Image */
+#header-image-container { 
+	position: relative;
+	line-height: 0px;
+}
+
+/* WP wraps #siteMainDynHeaderImage1 with #header-image-wrapper-1 by defult but removes it once the image is replaced */
+div#header-image-wrapper-1 {} 
+
+img#siteMainDynHeaderImage1 { 
+	width: 100%; 
+	height: auto;
+}
+
+
+/* ------------------------------------------ */
+/* 6.CONTENT AREAS AND CALLOUTS */	
+/* ------------------------------------------ */
+#content {
+	padding:0px 0px; 
+	min-height:100px;
+}
+
+
+/* background to the address, business hours, and payment*/
+.address-payments, #address-phone { 
+	color: #fff;
+	font-size: 16px; 
+	line-height: 190%;
+}
+
+#address-phone {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+	}
+
+/* background to the sidebar form*/
+.address-payments.sidebar { 
+	background: #ccc;	
+}
+
+
+/* ------------------------------------------ */
+/* 7.FOOTER AREA, UTILITY NAV, AND COPYRIGHT */	
+/* ------------------------------------------ */
+
+
+span.footerText {
+	display: none;	
+}
+
+#footerContent {
+	margin: 0 10px;
+}
+
+#footerContent div {
+	margin: 10px 0;
+}
+
+#mySocialList {
+	margin: 20px 10px 0;
+}
+
+
+/* Mirror Menu Module for Utility Nav */
+ul#mirror-menu-module {
+	margin: 5px 0;
+	padding: 0;
+	text-align: left;
+}
+ul#mirror-menu-module li {
+	display: block; /* remove and add float if you want the text left justified */
+	font-size: 16px;
+	line-height: 18px;
+	padding: 5px 10px;
+}
+ul#mirror-menu-module a {
+	color: #fff;
+	text-decoration: none; 
+	text-transform: uppercase;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+}
+ul#mirror-menu-module a:hover {
+	text-decoration: underline; 
+}
+
+
+/* YP Copyright */
+div#copyright {
+	font-size: 11px;
+	line-height: 14px;
+	color: #fff;
+}
+
+div#copyright a {
+	color: #fff;
+}
+
+div#copyright a:hover {
+	color: #ccc;
+}
+
+
+
+/* ------------------------------------------ */
+/* 8.MAIN NAVIGATION/MENU FOR DESKTOP */
+/* ------------------------------------------ */
+
+/* hide mobile elements in "desktop" view */
+#m-menu { display:none; }
+#navTab {display:none;}
+
+/* Main Navigation */
+#menu {
+	
+	position: relative;
+	z-index: 400;
+}
+ul#nav a{
+	background: transparent;
+	position: relative;
+}
+ul#nav li.current a:after {
+                                content: "";
+                                width: 0;
+                                height: 0;
+                                border-left: 6px solid transparent;
+                                border-right: 6px solid transparent;
+                                border-bottom: 6px solid #fff;
+                                position: absolute;
+                                bottom: 0;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                -o-transform: translateX(-50%);
+                                -ms-transform: translateX(-50%);
+                                -moz-transform: translateX(-50%);
+                                -webkit-transform: translateX(-50%);
+                }
+
+
+ul#nav {
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+
+	/* Start First Level Nav Items */
+	ul#nav li {
+		float: left;
+		padding: 0;
+		list-style: none;
+		list-style-image: none;
+		border-right: 1px solid #253e6d;
+	}
+	ul#nav li:last-child {
+		border-right: 0px solid #253e6d;
+		}
+	
+	ul#nav li.last { }
+	ul#nav li.first { }
+	ul#nav li a {
+		font-size: 24px;
+		text-decoration: none;
+		line-height: 60px; 
+		display: block;
+		text-align: left;
+		padding: 0px 30px;
+		text-transform: uppercase;
+		color: #fff;
+		transition: .3s;
+		font-family: 'Roboto Condensed', sans-serif;
+		font-weight: 400;
+		
+		
+	}
+	
+	ul#nav li.current a {
+		background-color: #335a9d;
+	}
+	
+	ul#nav li a:hover {
+		background-color: #335a9d;
+	}
+	
+	ul#nav li.first a {}
+	
+	ul#nav li.last a {}
+	
+	/* End First Level Nav Items */		
+	
+		/* Start Second Level Nav Items */
+		ul#nav li ul { /* second-level lists */
+			position: absolute;
+			left: -999em; /* using left instead of display to hide menus because display: none isnt read by screen readers */
+			margin: 0px;
+			padding: 0px;
+			background-color: #5a5a5a;
+			
+		}
+		
+		ul#nav li ul li {
+			float:left;
+			clear:left;	
+			border-right: 0px solid #253e6d;
+			}
+		
+		ul#nav li ul li a, 
+		ul#nav li.current ul li a { /* second level dropdown buttons */
+			width: 200px;
+			border-bottom: 1px solid #868686;
+			border-right: 0px solid #335a9d;
+			background-color: transparent;
+			text-transform: none;
+			color: #fff;
+			font-size: 14px;
+			line-height: 16px;
+			padding: 7px 10px;
+			font-family: Arial, Helvetica,  sans-serif;
+		}
+		
+		
+		ul#nav li ul li a:hover, 
+		ul#nav li.current ul li a:hover { /* second level dropdown button hover state */	
+			background-color: #335a9d;
+			color: #fff;
+			border-bottom: 1px solid #253e6d;
+		}
+		
+		ul#nav li ul li.current a { /* second level dropdown button hover state */	
+			background-color: #043146;
+			color: #fff;
+			border-bottom: 1px solid #0f4b67;
+		}
+		
+		/* first and lasts in drop down */
+		ul#nav li ul li.first a, 
+		ul#nav li.current ul li.first a { }
+		ul#nav li ul li.last a, 
+		ul#nav li.current ul li.last a { }
+		
+		/* End Second Level Nav Items */
+		
+			/* Start Third Level Nav Items */
+			ul#nav li ul li ul {
+			  margin: -31px 0 0 220px;
+			 background-color: #5a5a5a;
+			}
+			
+			ul#nav li ul li ul li a, 
+			ul#nav li.current ul li ul li a { /* third level dropdown buttons */
+				
+			}
+			
+			ul#nav li ul li ul li a:hover, 
+			ul#nav li.current ul li ul li a:hover { /* third level dropdown button hover state */						
+				
+			}
+			
+			/* first and lasts in drop down */
+			ul#nav li ul li ul li.first a, 
+			ul#nav li.current ul li ul li a { }
+			ul#nav li ul li ul li.last a, 
+			ul#nav li.current ul li ul li a { }
+			
+			/* End Third Level Nav Items */
+			
+				ul#nav li:hover ul li ul,
+				ul#nav li:hover ul li ul li ul,
+				ul#nav li.sfhover ul li ul,
+				ul#nav li.sfhover ul li ul li ul {
+					left: -999em;
+				}
+				 
+				ul#nav li:hover ul,
+				ul#nav li ul li:hover ul,
+				ul#nav li ul li ul li:hover ul,
+				ul#nav li.sfhover ul,
+				ul#nav li ul li.sfhover ul,
+				ul#nav li ul li ul li.sfhover ul { /* lists nested under hovered list items */
+					left: auto;
+				}
+
+			
+/* ------------------------------------------ */				
+/* 9.MAIN NAVIGATION/MENU FOR MOBILE DIVICES */	
+/* ------------------------------------------ */			
+@media only screen and (max-width: 767px) {				
+  /* hide desktop elements in "mobile" view */
+  #menu { display:none; }  
+  #wrapper-menu { display:none;}
+  
+
+  a#navTab { /* mobile menu open button */
+	display: block;
+	width: 100%;
+	height: 30px;
+	cursor: pointer;
+	margin: 6px auto;
+	z-index: 800;
+	background-image: url("gfx/icon-menu.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+	z-index: 900;
+  }	
+		
+  a#navTab:hover { } 
+  a#navTab.active {
+	background-position: bottom center;
+  }
+  
+  #m-wrapper-menu {  
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	background: #413f3d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #253e6d 0%, #253e6d 98%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#253e6d), color-stop(98%,#253e6d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #253e6d 0%,#253e6d 98%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #253e6d 0%,#253e6d 98%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #253e6d 0%,#253e6d 98%); /* IE10+ */
+	background: linear-gradient(to bottom,  #253e6d 0%,#253e6d 98%); /* W3C */
+
+	-moz-box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 1px rgba(255,255,255,0.6);
+	-webkit-box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 1px rgba(255,255,255,0.6);
+	box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 1px rgba(255,255,255,0.6);
+  }	
+  
+  #m-menu {
+	height: auto;
+	overflow: visible;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	z-index: 800;
+	display: block;
+	margin: 0 auto;
+	line-height:0;
+  }	
+  
+  #m-menu-content {
+	display: none; /* hides the menu by default */
+  }	
+		
+  #m-menu ul#nav {
+	margin: 0;
+	padding: 0;
+	width: auto;
+	
+	box-shadow: 0px 2px 4px rgba(000,000,000,0.5);
+	-webkit-box-shadow: 0px 2px 4px rgba(000,000,000,0.5);
+  }
+  
+  
+  /* Start First Level Nav Items */
+  #m-menu ul#nav li {
+	float: none;
+	padding: 0;
+	list-style: none;
+	list-style-image: none;	
+  }
+  
+  #m-menu ul#nav li.last {
+	border-left: 0px;
+	border-right: 0px;
+  }
+  
+  #m-menu ul#nav li.first {
+	border-left: 0px;
+	border-right: 0px;
+  }	
+  
+  #m-menu ul#nav li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	line-height: 1.3;
+	display: block;
+	text-align: left;
+	padding: 12px 15px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #b7b7b7;
+	border-left: 0px;
+	border-right: 0px;
+	background: #253e6d;
+  }	
+  
+  #m-menu ul#nav li.current a, #m-menu ul#nav li a:hover {
+	background-color: #043146;
+  }
+   
+  /* End First Level Nav Items */		
+  
+  /* Start Second First Level Nav Items */
+  #m-menu ul#nav li ul { /* second-level lists */
+	position: relative;
+	display: block;
+	width: 100%;			
+	margin: 0px;
+	padding: 0px;
+	left: 0px;
+  }
+  
+  #m-menu ul#nav li ul li a, 
+  #m-menu ul#nav li.current ul li a { /* second level dropdown buttons */
+	width: auto;
+/*	background: #ccc;
+	color: #000; */
+	padding: 10px 15px 10px 30px;
+	text-transform: none;
+	font-size: 14px;
+	 background-color: #5a5a5a;
+  }
+  
+  #m-menu ul#nav li ul li a:hover, 
+  #m-menu ul#nav li.current ul li a:hover,
+  #m-menu ul#nav li ul li a:active, 
+  #m-menu ul#nav li.current ul li a:active,
+  #m-menu ul#nav li ul li.current a { /* second level dropdown button hover and active states */
+	background-color: #335a9d;
+  }
+  /* End Second First Level Nav Items */	
+  
+  /* Hide Third Level Nav Items */	
+  #m-menu ul#nav li ul li ul { /* third-and-above-level lists */
+  display:none;
+  }
+  #m-menu ul#nav li:hover ul li ul, 
+  #m-menu ul#nav li:hover ul li ul li ul, 
+  #m-menu ul#nav li.sfhover ul li ul, 
+  #m-menu #nav li.sfhover ul li ul li ul {
+	display:none;
+	left: 0px;
+  }
+  
+  #m-menu ul#nav li:hover ul, 
+  /*#m-menu ul#nav li ul li:hover ul, 
+  #m-menu ul#nav li ul li ul li:hover ul,*/ 
+  #m-menu ul#nav li.sfhover ul, 
+  #m-menu ul#nav li ul li.sfhover ul /*, 
+  #m-menu ul#nav li ul li ul li.sfhover ul */{ /* lists nested under hovered list items */
+	display:block;
+  }
+  /* End Mobile Nav Media Query */
+}
+
+
+/* ------------------------------------------ */				
+/* 10. MOBILE QUICK NAV BUTTONS */	
+/* ------------------------------------------ */
+				
+#m-panel {
+	background:#999;
+}
+
+/* mobile bottom nav bar background */
+
+a.m-click-phone, 
+
+a.m-click-mail, 
+a.m-click-map {
+	background: #413f3d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #253e6d 0%, #253e6d 98%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#253e6d), color-stop(98%,#253e6d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #253e6d 0%,#253e6d 98%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #253e6d 0%,#253e6d 98%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #253e6d 0%,#253e6d 98%); /* IE10+ */
+	background: linear-gradient(to bottom,  #253e6d 0%,#253e6d 98%); /* W3C */
+	-moz-box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 1px rgba(255,255,255,0.6);
+	-webkit-box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 1px rgba(255,255,255,0.6);
+	box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 1px rgba(255,255,255,0.6);
+}	
+
+a.m-click-phone span, 
+a.m-click-mail span, 
+a.m-click-map span {
+	background-image: url("gfx/mobile-panel-icons.png");
+}	
+  
+
+/* ------------------------------------------ */ 
+/* 11.WIDGET BUTTONS, BACK TO TOP, and Site Map */
+/* ------------------------------------------ */
+
+/* Widget Buttons, FAQ and Jobs Modules */
+.widget-button, 
+#FAQ_category_list > li > a,
+#FAQ_category_list > li > a:visited, 
+.jobs-apply a,
+.buttons, a.buttons {
+	filter:none;
+	cursor:pointer;
+	width:auto; 
+	height:auto; 
+	text-align:center; 
+	text-decoration:none; 
+	z-index:1001;
+	background: #253e6d;
+	font-size:150%;
+	line-height: 120%;
+	color:#fff;
+	padding: 8px 15px;
+	border:0px;
+	/* note if removing rounded corners set the number to 0 */
+	-moz-border-radius:0px;
+    -webkit-border-radius:0px;
+     border-radius:0px;
+	-webkit-appearance: none; /* this is needed to remove default styling from mobile apple devices */
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.widget-button:hover,
+#FAQ_category_list > li > a:hover,
+#FAQ_category_list > li > a:focus,
+#FAQ_category_list > li > a:active,
+.jobs-apply a:hover,
+.jobs-apply a:active,
+.jobs-apply a:focus,
+.buttons:hover, a.buttons:hover {
+	filter:none;
+	cursor:pointer;
+	background:#335a9d;
+	}
+	
+.buttons {
+	font-size:150%;
+	line-height: 120%;
+	padding: 8px 20px;
+	width: 100%;
+	}	
+	
+#job-apply .buttons {
+	padding: 8px 20px;
+	width: auto;
+	}	
+
+	
+/* Back to Top */
+
+#back-top a {
+	width: 42px;
+	display: block;
+	text-align: center;
+	font: 11px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #bbb;
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+
+#back-top a:hover {
+	color: #000;
+}
+
+/* Arrow Icon (span tag) */
+#back-top span {
+	width: 42px;
+	height: 46px;
+	display: block;
+	margin-bottom: 7px;
+	background: #335a9d url("gfx/back-to-top.png") no-repeat center center;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+
+#back-top a:hover span {
+	background: #999 url("gfx/back-to-top.png") no-repeat center center;
+}	
+
+/* Site Map */
+
+#site_map ul a:hover {
+    background: #eee none repeat scroll 0 0;
+}
+#site_map ul a:before {
+    background: #87ceeb none repeat scroll 0 0;  
+	font-weight: normal;
+}
+#site_map ul a:after {
+    border: 0.5em solid transparent;
+}
+#site_map ul a:hover:after {
+    border-left-color: #87ceeb;
+}
+
+/* ------------------------------------------ */
+/* 12. MEDIA QUERIES */
+/* ------------------------------------------ */
+
+
+ @media only screen and (max-width: 1280px) {
+	 
+	 #content {font-size: 14px;}
+	 
+	 #logo-slogan {
+		font-size: 45px;
+		}
+	 #phone-cta {
+		font-size: 55px;
+		}	
+		
+	 ul#nav li a {
+  
+	  font-size: 18px;
+	  line-height: 46px;
+	  padding: 0 22px;
+	 
+	}
+	
+ }
+ 
+ 
+/* Mobile Divices Smaller Than Standard 960 */
+@media only screen and (max-width: 959px) {
+	
+	#logo-slogan {
+		font-size: 40px;
+		}
+		
+	#phone-cta {
+		font-size: 45px;
+		}		
+		
+		 .tagline2 br {
+		  display:block;
+		  font-size:40%;
+		  }
+		  
+		 .tagline2  {
+		  font-size:40%;
+		  }
+	 /*.hidde-nav{
+		 visibility: hidden;
+	 }
+	.unhid-nav{
+		visibility: visible;
+	}*/
+	ul#nav li a {
+    font-size: 18px;
+    line-height: 46px;
+    padding: 0 19px;
+}
+
+	
+	
+}
+
+
+/* Smartphones Landscape and Other Mobile Divices Smaller Than 768px */
+@media only screen and (max-width: 767px) {
+	
+		/* reduced H1 - H6 for mobile */
+	h1 { 
+	font-size: 240%; 
+	}
+	h2 { 	
+		font-size: 220%; 
+	}
+	h3 {	
+		font-size: 200%; 
+	}
+	h4 { 	
+		font-size: 180%; 
+	}
+	h5 { 
+		font-size: 160%;  
+	}
+	h6 { 
+		font-size: 140%;  
+	}
+	
+	/* mobile Phone and CTA */
+	#header-1 #phone-cta {
+	
+	}
+	
+	#m-phone-cta {
+		display:block;
+	}
+	
+	
+  /* HEADER AREA 1 */
+	  #logo-slogan {
+		  text-align: center;
+		  padding: 10px 0;	
+		  font-size: 35px;
+	  }
+	  
+	  .phone-number {
+		  text-align: center;
+		  font-size: 90%;
+		}
+	  
+	  
+	  .tagline2, .tagline2 div {
+		  display: block;
+		  text-align: center;
+	  }	
+	 
+	  
+	  /* Center Utility Nav on Mobile */
+	  ul#mirror-menu-module {
+		  text-align: center;
+	  }
+}
+
+/* Smartphones Portrait */
+@media only screen and (max-width: 479px) { 
+ 	#siteMainDynLogo /* this is for the mobile logo image */ {
+		max-width:280px;
+		height:auto;		
+	}
+
+	
+}	
+
+.callouts {
+	margin:0px 15px;
+	}
+
+.callouts h5  {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+	font-size: 190%;
+	
+}
+
+.callouts .widget-button {
+	padding: 15px;
+	}
+	
+
+ @media only screen and (max-width: 1280px) {
+	 .callouts h5  {
+		 font-size: 150%;
+	 }
+ 
+ }
+
+
+@media only screen and (max-width: 959px) {
+	 .callouts .widget-button {
+	font-size: 130%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.callouts {
+	margin:15px 0px;
+	}
+}
+
+
+
+	
+	
+	
+	
+
+
+.section-header {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	}
+
+.section-1 {
+	background-size: cover;	
+	background-position: center center;
+	background-repeat: no-repeat;
+	color: #fff;
+	}
+	
+	
+	
+.section-1 h1,
+.section-1 h2,
+.section-1 h3, 
+.section-1 h4, 
+.section-1 h5, 
+.section-1 h6  {
+	color:#fff;
+	text-transform: uppercase;
+}
+
+.section-2 h1,
+.section-2 h2,
+.section-2 h3, 
+.section-2 h4, 
+.section-2 h5, 
+.section-2 h6  {
+	color:#fff;
+	text-transform: uppercase;
+}
+
+.section-2 {
+	color: #fff;
+	}
+	
+/* section 2 form */
+
+.section-2  .contact-us li {
+  box-sizing: border-box;
+  float: left;
+  list-style: outside none none;
+  margin: 0;
+  width: 50%;
+  padding: 0px 10px;
+}
+
+
+.section-2  .contact-us input[type="text"], .address-payments .contact-us li textarea {
+    box-sizing: border-box;
+    line-height: 200%;
+    padding: 5px 10px;
+    width: 100%;
+	height:auto;
+}
+
+
+.section-2  .contact-us li:nth-last-child(2) {
+    width: 100%;
+}
+
+.section-2  .contact-us li:nth-child(2) {
+  width: 50%;
+}
+
+@media only screen and (max-width: 767px) {
+	
+	.section-2  .contact-us li {
+    width: 100%;
+	clear:left;
+	}
+	
+	.section-2  .contact-us li:nth-child(2) {
+    width: 100%;
+    }
+}
+	
+
+/* map on homepage */
+#map_canvas_1002699 {
+	height: 500px !important;
+	}
+
+.short-map .widget-body div  {
+  	position:relative;
+	}
+
+.short-map .widget-body div p:first-child a {
+	background: #af1515 none repeat scroll 0 0;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 120%;
+	padding: 10px 27px;
+	text-align: center;
+	text-decoration: none;
+	width: auto;
+	z-index: 1001;
+	font-family: 'Roboto Condensed', sans-serif;
+	}
+
+.short-map .widget-body div p:first-child a:hover {
+ 	background:#616161;
+ 	color: #fff;
+	}
+
+.short-map .widget-body div p:first-child {
+	top: 15px;
+	height: 30px;
+	left: 50%;
+	margin-left: -150px;
+	position: absolute;
+	text-align: center;
+	width: 350px;
+	z-index: 90;
+	}
+
+@media only screen and (max-width: 767px) {
+
+	.short-map .widget-body div p:first-child {
+  		position: relative;
+		}
+		
+	.short-map .widget-body div p:first-child {
+	width: 300px;
+	}	
+	
+	.short-map .widget-body div p:first-child a {
+	font-size: 14px;
+	padding: 10px 20px;
+	}
+	}
+
+
+.hiddding-stuff{
+	visibility: hidden;
+}

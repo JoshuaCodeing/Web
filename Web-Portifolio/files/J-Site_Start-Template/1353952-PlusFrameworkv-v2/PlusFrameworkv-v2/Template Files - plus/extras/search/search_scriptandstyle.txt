@@ -1,0 +1,113 @@
+STEP 1:
+VERY IMPORTANT ...
+Go to Site Settings>General and check the 'Enable Site Search' feature at the bottom of the tab.
+
+STEP 2:
+-----Place within the head tag of the template------
+
+<script>
+$(document).ready(function() {	 
+	$(".search_button").on('click', function() {
+			$('#search-box-results').addClass("searchResults-show");
+			});
+	$('.searchResults-close').on('click', function() {
+			$('#search-box-results').removeClass("searchResults-show");
+			}); 
+});
+</script>
+
+STEP 3:
+Place the following CSS in your Template Skin.
+
+/* ------------------------------------------ */
+/* 5-C.SEARCH */	
+/* ------------------------------------------ */
+.result-item p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: Arial;
+}
+#search-box-results {
+	display:none;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	z-index:999999;
+	 background-image: url({IMG_PATH}/bg-search.png);
+}
+
+.searchResults-show {
+     display:block !important;
+}
+
+#search-box-results-inner {
+   background-color: white;
+  border: 4px solid #808080;
+  bottom: 10%;
+  height: auto;
+  left: 50%;
+  margin-left: -470px;
+  padding: 16px;
+  position: absolute;
+  top: 10%;
+  width: 940px;
+  z-index: 99999;
+  box-sizing: border-box;
+}
+	
+@media only screen and (max-width: 1280px) {
+	#search-box-results-inner {
+   	 margin-left: -384px;
+   	 width: 768px;
+	}
+ }
+
+@media only screen and (max-width: 959px) {
+
+	#search-box-results-inner {
+   	 margin-left: -325px;
+   	 width: 650px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+       #search-box-results-inner {
+   	 margin-left: -200px;
+   	 width: 400px;
+	}
+}
+
+@media only screen and (max-width: 479px) { 
+        #search-box-results-inner {
+   	 margin-left: -145px;
+   	 width: 290px;
+	}
+}
+
+.searchResults-close {
+  background-color: #000;
+  background-image: url("{IMG_PATH}/bg-close.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 4px solid #808080;
+  border-radius: 30px;
+  content: "";
+  display: block;
+  height: 35px;
+  position: absolute;
+  right: -25px;
+  top: -25px;
+  width: 35px;
+  cursor: pointer;
+}
+
+#searchResults {
+  height: 100%;
+  overflow: auto;
+}	

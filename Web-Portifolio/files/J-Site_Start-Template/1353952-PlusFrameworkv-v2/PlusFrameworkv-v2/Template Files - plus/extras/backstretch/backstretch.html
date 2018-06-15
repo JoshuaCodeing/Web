@@ -1,0 +1,20 @@
+<head>
+<title>Responsive Structure</title>
+
+<!----------------------------------------------------------------->
+<!-- Add the following to the head section of your template HTML -->
+<!----------------------------------------------------------------->
+
+<script src="gfx/jquery.backstretch.js"></script>
+
+
+<!-- backstretch script -->
+<script>
+$(document).ready(function(){
+		var url = $(".skinBg").css('background-image').replace('url(', '').replace(')', '').replace("'", '').replace('"', '').replace("'", '').replace('"', '');
+		$(".skinBg").backstretch(url);  	
+});
+</script>
+<!-- end backstretch script -->
+
+</head>

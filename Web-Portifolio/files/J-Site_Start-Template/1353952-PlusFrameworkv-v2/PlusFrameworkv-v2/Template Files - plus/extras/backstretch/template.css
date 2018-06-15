@@ -1,0 +1,10 @@
+/* ------------------------------------------ */
+/* Replace class skinBg with the following for backstretch background. */
+/* ------------------------------------------ */
+
+.skinBg { 
+	background: url(gfx/skinbg.jpg);
+	background-position: center top;
+	background-repeat: no-repeat; 
+	background-size: cover;	/* important when using the backstretch script */
+}

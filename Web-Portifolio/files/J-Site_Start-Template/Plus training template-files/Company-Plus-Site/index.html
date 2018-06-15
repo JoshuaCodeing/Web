@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Responsive Structure</title>
+<link rel="stylesheet" type="text/css" href="color1.css" />
+<link href="main.css" rel="stylesheet" type="text/css" />
+<link href="header-selector.css" rel="stylesheet" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+<!-- BEGIN HTML COPY/PASTE -->
+
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+<!-- script for scroll to top, IE drop down menu fix, and mobile quick nav link script -->
+<script type="text/javascript" src="gfx/yp-scripts.js"></script>
+<!-- mobile navigation script -->
+<script>
+$(document).ready(function(){
+	$("#navTab").click(function(){
+	  $("#m-menu-content").slideToggle("slow");
+	  $(this).toggleClass("active");
+	  	});
+		if ($('ul#nav li ul li').hasClass('current')) {
+		$('ul#nav li ul li.current').parents('li').addClass('current');
+		};
+	});
+</script>
+<!-- end mobile navigation script -->
+
+</head>
+
+<body>
+
+<!-- mobile cta panel -->
+<div id="m-panel">
+  <div class="m-panel-content"> 
+  <a href="tel:{PHONE}" rel="nofollow" class="m-click-phone"><span>{LANG_CALL_US_M}</span></a> 
+  <a href="mailto:{EMAIL}" class="m-click-mail"><span>{LANG_SEND_EMAIL_M}</span></a> 
+  <a href="{CLICK2MAPURL}" class="m-click-map"><span>{CLICK2MAPURL}</span></a> 
+  </div>
+</div>
+<!-- end mobile cta panel --> 
+
+<!-- back to top -->
+<p id="back-top"> <a href="#top"><span></span>Back to Top</a> </p>
+<!-- end back to top --> 
+
+<!-- begin mobile menu -->
+<nav id="m-menu" > 
+  <!-- mobile menu button -->
+  <div id="m-wrapper-menu"> <a id="navTab"></a> </div>
+  <!-- end mobile menu button -->
+  <div id="m-menu-content"> 
+    <!-- replace with menu tag -->
+    <ul id="nav">
+      <li class="current first"><a href="#">Home</a>
+        <ul>
+          <li><a href="#">drop 1</a>
+            <ul>
+              <li><a href="#">drop 2</a></li>
+              <li><a href="#">drop 2</a></li>
+            </ul>
+          </li>
+          <li><a href="#">drop 1</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Services</a></li>
+      <li class="last"><a href="#">Contact Us</a>
+        <ul>
+          <li><a href="#">drop 2</a></li>
+          <li><a href="#">drop 2</a></li>
+        </ul>
+      </li>
+    </ul>
+    <!-- replace with menu tag end --> 
+  </div>
+</nav>
+<!-- end mobile menu --> 
+
+<!-- begin header wrapper -->
+<div id="wrapper-header" class="skinBg"> 
+  
+  <!-- HEADER ONE -->
+  
+  <div id="header-1">
+    <div id="header" class="table-container">
+      <div id="logo-slogan" class="four cells"> 
+        <!-- logo tag --><a class="logo" href="#"> <div><img src="gfx/logo.jpg" alt=""/></div> </a><!-- logo tag -->  
+      </div>
+      <!-- start phone-cta -->
+      <div id="phone-cta" class="twelve cells">
+        <div class="phone-number">1 (800) 555-5555</div>
+        <div class="tagline2">Call Us Today! <br/> </div>    
+      </div>
+      
+      <!-- end logo --> 
+    </div>
+    <!-- end header container --> 
+
+   
+    
+    
+    <!-- start main nav wrapper -->
+    <div id="wrapper-menu">
+      <div class="sk-container"> 
+        <!-- start nav#menu -->
+        <div id="menu" class="sixteen columns">
+          <ul id="nav">
+            <li class="current first"><a href="#">Home</a>
+              <ul>
+                <li><a href="#">drop 1</a>
+                  <ul>
+                    <li><a href="#">drop 2</a></li>
+                    <li><a href="#">drop 2</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">drop 1</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Services</a></li>
+            <li class="last"><a href="#">Contact Us</a>
+              <ul>
+                <li><a href="#">drop 2</a></li>
+                <li><a href="#">drop 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- end nav#menu --> 
+      </div>
+    </div>
+    <!-- end main nav wrapper --> 
+  </div>
+  <!-- END HEADER ONE --> 
+  
+  <!-- begin mobile phone # -->
+  
+    <div id="m-phone-cta" >
+      
+    
+  </div>
+  <!-- end mobile phone # --> 
+  
+</div>
+<!-- end header wrapper --> 
+
+<!-- start div#wrapper-content -->
+<div id="wrapper-content"><!-- the skinBg is one of the images that can be swapped out by the user through the UI --> 
+  
+  <!-- content area -->
+  <section>
+    <div id="content"> 
+      
+      <!-- Page title only required on internal pages -->
+      <div class="sk-container">
+        <h2 class="page-heading">{CONTENT_TITLE_ONLY}</h2>
+      </div>
+      <!-- begin remove and replace with CONTENT_DATA tag -->
+      
+      <div class="widget-wrapper widget-element free-text diy-resizable">
+        <div style="" class="widget-body">
+          <div class="freetextarea"> 
+            <!-- Header elements -->
+            <h1>This is a header 1</h1>
+            <h2>This is a header 2</h2>
+            <h3>This is a header 3</h3>
+            <h4>This is a header 4</h4>
+            <h5>This is a header 5</h5>
+            <h6>This is a header 6</h6>
+            <!-- Paragraph and link elements -->
+            <p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing elit</a>. Nunc leo nisi, hendrerit in varius porttitor, luctus sit amet nibh. Etiam lacinia neque nec turpis tristique dapibus. In imperdiet, nisl ac mollis dictum, metus lorem mattis justo, vel aliquam risus nibh ac augue.</p>
+            <p>Vestibulum elit ipsum, eleifend at egestas a, aliquam ac libero. Sed sagittis cursus commodo. Fusce non urna tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam pretium vehicula enim eu consectetur. Donec nec mauris nulla.</p>
+            <!-- UL/OL elements -->
+            <div class="four columns alpha">
+              <ul>
+                <li>Listed Item</li>
+                <li>Listed Item</li>
+                <li>Listed Item</li>
+                <li>Listed Item</li>
+                <li>Listed Item</li>
+              </ul>
+            </div>
+            <div class="four columns omega">
+              <ol>
+                <li>Numbered list</li>
+                <li>Numbered list</li>
+                <li>Numbered list</li>
+                <li>Numbered list</li>
+                <li>Numbered list</li>
+              </ol>
+            </div>
+            <div class="clear"></div>
+            <p>Vestibulum elit ipsum, eleifend at egestas a, aliquam ac libero. Sed sagittis cursus commodo.</p>
+          </div>
+          <div class="six columns omega"> 
+            <!-- Widget Buttons are very important to style out -->
+            <div class="widget-button">Widget Button</div>
+            <p>Vestibulum elit ipsum, eleifend at egestas a, aliquam ac libero. Sed sagittis cursus commodo.</p>
+            <hr>
+            <blockquote>This is a Blockquote. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</blockquote>
+          </div>
+        </div>
+      </div>
+      
+      <!-- end remove and replace with CONTENT_DATA tag --> 
+      
+    </div>
+  </section>
+</div>
+<!-- end div#wrapper-content --> 
+
+<!-- start div#wrapper-footer-nav -->
+<div id="wrapper-footer-nav">
+  <div class="sk-container"> 
+    <!-- start mirrior menu module -->
+    <nav class="six columns">
+      <ul id="mirror-menu-module">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a> </li>
+      </ul>
+    </nav>
+    
+    <div id="address-phone" class="ten columns">
+    	 {WIDGET_AREA|{"name":"footer"}|}  
+    </div>
+    <!-- end mirrior menu module --> 
+    
+  </div>
+  <!-- end footer container --> 
+</div>
+<!-- end div#wrapper-footer-nav --> 
+
+<!-- start div#wrapper-copyright -->
+<div id="wrapper-copyright">
+  <div class="sk-container"> 
+    <script src='http://sites.yp.com/templates/creator/m_2/2d/2d2/2305/assets/copyright.js' type='text/javascript'></script> 
+  </div>
+</div>
+<!-- end div#wrapper-copyright --> 
+
+<!-- END HTML COPY/PASTE -->
+
+
+
+
+
+</body>
+</html>
